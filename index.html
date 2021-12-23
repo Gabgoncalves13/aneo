@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneo - Início</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body>
+
+    <header class="main-menu">
+
+        <img src="./assets/logo aneo.png" width="180px">
+        <span class="material-icons menu-icon" onclick="changeMenuVisibility()">menu</span>
+
+        <ul id="menu">
+            <span class="material-icons" onclick="changeMenuVisibility()">close</span>
+            <li><a class="active" href="./index.html">Início</a></li>
+            <li><a href="./pages/cap_1/index.html">Cordeiros</a></li>
+            <li><a href="./pages/cap_2/index.html">Arena</a></li>
+            <li><a href="./pages/cap_3/index.html">Caça</a></li>
+            <li class="chronicals">
+                <a>Crônicas</a>
+                <ul id="chronicalsMenu">
+                    <li><a href="./pages/chronicles/beatrizDias.html">Vamos ao culto </a></li>
+                    <li><a href="./pages/chronicles/beatrizGarcia.html">Colossenses 2:4</a></li>
+                    <li><a href="./pages/chronicles/carolineMello.html">Salvação</a></li>
+                    <li><a href="./pages/chronicles/flaviaMelo.html">Boas-vindas</a></li>
+                    <li><a href="./pages/chronicles/gabrielaGoncalves.html">A Pregação</a></li>
+                    <li><a href="./pages/chronicles/lauraImene.html">Buscareis</a></li>
+                    <li><a href="./pages/chronicles/lucasJarrouge.html">Milagre</a></li>
+                    <li><a href="./pages/chronicles/henriqueRiboldi.html">Julgamento</a></li>
+                </ul>
+            </li>
+            <li><a href="./pages/quiz.html">Dinâmica</a></li>
+        </ul>
+
+    </header>
+
+    <main class="main-content">
+
+        <section class="intro-section">
+
+            <h1>À direita de Deus:</h1>
+            <h2>O papel dos líderes neopentecostais na construção da fé</h2>
+
+        </section>
+
+        <section class="caps container row">
+
+            <p class="intro-text">
+                Em constante expansão, a vertente religiosa neopentecostal surgiu na década de 1970 e, desde então, tem arrastado multidões de seguidores Brasil afora.<br><br>
+                Fundamentadas na presença de grandes líderes carismáticos e no forte apelo midiático, essas igrejas alcançaram poder de influência na vida dos fiéis, na esfera política brasileira e também no imaginário popular do que é ser evangélico atualmente.
+            </p>
+
+            <article class="preview col xl3 s12">
+
+                <img
+                    src="./assets/preview cap 1.png">
+
+                <h1>Cordeiros</h1>
+
+                <p>Identificação e idealização: é com essa dualidade carismática que os líderes neopentecostais são capazes de cativar multidões.</p>
+
+                <a href="./pages/cap_1/index.html" class="waves-effect waves-light main-button">Ler</a>
+
+            </article>
+
+            <article class="preview col xl3 s12">
+
+                <img
+                    src="./assets/preview cap 2.png">
+
+                <h1>Arena</h1>
+
+                <p>Fundada em meados dos anos 70, a vertente neopentecostal concentra grandes fortunas, poder de influência e participação ativa na política brasileira.</p>
+
+                <a href="./pages/cap_2/index.html" class="waves-effect waves-light main-button">Ler</a>
+
+            </article>
+
+            <article class="preview col xl3 s12">
+
+                <img
+                    src="./assets/preview cap 3.png">
+
+                <h1>Caça</h1>
+
+                <p>Embora as pregações dos cultos falem sobre liberdade, muitas vezes o dia a dia das instituições neopentecostais se mostram abusivos e exaustivos.</p>
+
+                <a href="./pages/cap_3/index.html" class="waves-effect waves-light main-button">Ler</a>
+
+            </article>
+
+            <article class="preview col xl3 s12">
+
+                <img
+                    src="./assets//preview quiz.png">
+
+                <h1>Dinâmica</h1>
+
+                <p>O quanto você sabe sobre as igrejas e os maiores líderes neopentecostais do Brasil? Descubra neste quiz!<br><br></p>
+
+                <a href="./pages/quiz.html" class="waves-effect waves-light main-button">Participar</a>
+
+            </article>
+
+        </section>
+
+        <section class="staff">
+
+            <h1 class="section-title">Equipe</h1>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Gabriela Goncalves.png">
+                        <h1>Gabriela Gonçalves</h1>
+                        <h2>Texto, entrevista e coordenação de conteúdos</h2>
+                        <p>Jornalista em formação, roteirista de projetos na área de Esports e nerd de cultura pop.</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Beatriz Garcia.png">
+                        <h1>Beatriz Garcia</h1>
+                        <h2>Texto, entrevista e roteiro de vídeo</h2>
+                        <p>Estudante de jornalismo, viciada em música, cinema e livros. Atualmente trabalha com marketing de mídia social.</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Caroline Mello.png">
+                        <h1>Caroline Mello</h1>
+                        <h2>Texto, entrevista e coordenação de conteúdos</h2>
+                        <p>Quase jornalista, motivada pela diversidade social, amante da comunicação e da arte.</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Lucas Jarrouge.png">
+                        <h1>Lucas Jarrouge</h1>
+                        <h2>Planejamento de pauta</h2>
+                        <p>Aspirante a jornalista, produtor de hard e soft news e amante de música.</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Beatriz Dias.png">
+                        <h1>Beatriz Dias</h1>
+                        <h2>Entrevista, produção e edição de imagem, vídeo e áudio</h2>
+                        <p>Estudante de jornalismo, fotógrafa nas horas vagas e amante das artes.</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Laura Imene.png">
+                        <h1>Laura Imene</h1>
+                        <h2>Texto, entrevista e produção de conteúdo multimídia</h2>
+                        <p>Jornalista em formação, imersa no mundo da assessoria de imprensa e gestão de conteúdo. Amante de Friends e de piadinhas (a qualquer hora).</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Flavia Ambrosio.png">
+                        <h1>Flávia Ambrósio</h1>
+                        <h2>Produção de conteúdo multimídia</h2>
+                        <p>Uma quase jornalista, faladeira e curiosa. Apaixonada por futebol e astrologia.</p>
+                    </div>
+
+                    <div class="swiper-slide staff-slide">
+                        <img src="./assets/staff/Henrique Riboldi.png">
+                        <h1>Henrique Riboldi</h1>
+                        <h2>Entrevista e planejamento de pauta</h2>
+                        <p>Curioso sobre muita coisa, entendedor sobre nada em particular.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h1 class="footer-title">Essa reportagem foi produzida por estudantes de Jornalismo como Trabalho de Conclusão de Curso da Universidade Anhembi Morumbi, sob a orientação da Prof. Carolina Moura Klautau.</h1>
+
+        <!-- <main>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+        </main> -->
+
+    </footer>
+
+    <script src="./scripts/menu.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="./scripts/home.js"></script>
+
+</body>
+
+</html>

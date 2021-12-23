@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneo - Dinâmica</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
+</head>
+
+<body>
+
+    <header class="main-menu">
+
+        <img src="../assets/logo aneo.png" width="180px">
+        <span class="material-icons menu-icon" onclick="changeMenuVisibility()">menu</span>
+
+        <ul id="menu">
+            <span class="material-icons" onclick="changeMenuVisibility()">close</span>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="./cap_1/index.html">Cordeiros</a></li>
+            <li><a href="./cap_2/index.html">Arena</a></li>
+            <li><a href="./cap_3/index.html">Caça</a></li>
+            <li class="chronicals">
+                <a>Crônicas</a>
+                <ul id="chronicalsMenu">
+                    <li><a href="./chronicles/beatrizDias.html">Vamos ao culto </a></li>
+                    <li><a href="./chronicles/beatrizGarcia.html">Colossenses 2:4</a></li>
+                    <li><a href="./chronicles/carolineMello.html">Salvação</a></li>
+                    <li><a href="./chronicles/flaviaMelo.html">Boas-vindas</a></li>
+                    <li><a href="./chronicles/gabrielaGoncalves.html">A Pregação</a></li>
+                    <li><a href="./chronicles/lauraImene.html">Buscareis</a></li>
+                    <li><a href="./chronicles/lucasJarrouge.html">Milagre</a></li>
+                    <li><a href="./chronicles/henriqueRiboldi.html">Julgamento</a></li>
+                </ul>
+            </li>
+            <li><a class="active" href="./quiz.html">Dinâmica</a></li>
+        </ul>
+
+    </header>
+
+    <main class="main-quiz container">
+
+        <div id="quiz">
+
+            <section class="progress-wrapper">
+
+                <div class="progress">
+                    <div id="progressBar" class="determinate"></div>
+                </div>
+
+                <span class="progress-overview"><b id="currentQuestion"></b>/7</span>
+
+            </section>
+
+            <p id="questionTitle" class="question"></p>
+
+            <section id="feedback" style="display: none;">
+
+                <p id="result" class="true"></p>
+
+                <p id="justification"></p>
+
+                <button class="waves-effect waves-light main-button restart" type="button" name="action" onclick="updateQuiz()">Próxima</button>
+
+            </section>
+
+            <section class="answers">
+
+            </section>
+
+            <section class="choices" id="choices" style="display: flex;">
+
+                <button class="btn waves-effect waves-light true" type="button" name="action" onclick="nextQuestion(true)">Verdadeiro</button>
+
+                <button class="btn waves-effect waves-light false" type="button" name="action" onclick="nextQuestion(false)">Falso</button>
+
+            </section>
+
+        </div>
+
+        <section id="quizFinished">
+
+            <span class="material-icons-outlined">done</span>
+
+            <h1>Parabéns! Você respondeu a todas as perguntas e chegou ao final da dinâmica!</h1>
+
+            <!-- <button class="btn waves-effect waves-light restart" type="button" name="action" onclick="restartQuiz()">Responder novamente</button> -->
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h1 class="footer-title">Essa reportagem foi produzida por estudantes de Jornalismo como Trabalho de Conclusão de Curso da Universidade Anhembi Morumbi, sob a orientação da Prof. Carolina Moura Klautau.</h1>
+
+        <!-- <main>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+            <section>
+                <h1>Lorem</h1>
+                <h2>Ipsum</h2>
+                <span class="social">
+                    <img src="./assets/instagram-icon.png" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+                <span class="social">
+                    <img src="./assets/twitter-icon.jpg" alt="">
+                    <span>@LoremIpsum</span>
+                </span>
+            </section>
+
+        </main> -->
+
+    </footer>
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/quiz.js"></script>
+
+</body>
+
+</html>

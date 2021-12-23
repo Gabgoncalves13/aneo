@@ -1,0 +1,18 @@
+.row {
+
+    margin-bottom: 0 !important;
+
+}
+
+p {
+
+    text-transform: none;
+    margin-block: 112px;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 32px;
+
+}
